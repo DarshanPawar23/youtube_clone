@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+          <div class="info invert">
+            <img src="info.svg" alt="">
+          </div>
+      
+      
+          <div class="logo">
+            <img src="logo.png" class="logos" />
+            <h3 class="invert">YouTube <sup class="color">IN</sup></h3>
+          </div>
+      
+        
+          <div class="search-container">
+            <input type="text" placeholder="Search" class="search-input" />
+            <span class="clear-btn" onclick="document.getElementById('searchBox').value = ''">×</span>
+            <button class="search-button">
+                <img src="search.svg" alt="Search" class="search-icon" />
+            </button>
+          </div>
+          <button class="mic-button">
+            <img src="mic.svg" alt="Mic" class="mic-icon" />
+          </button>
+          <div class="wrap-pim">
+            <span class="new-badge">NEW</span>
+           <button class="pim" id="pim"> PREMIUM </button>
+          </div>
+          <button class="create-button">
+            <img src="plus.svg" alt="Create" class="plus-icon invert" /> Create
+          </button>
+
+          <button class="notification-button">
+            <img src="notification.svg" alt="Notification" class="notification-icon" />
+            <div class="notification-badge">1</div>
+          </button>
+ 
+          <div class="circle-d">
+            D
+          </div>
+                    
+        </div>
+        <div class="split-container">
+
+          <div class="left-panel">
+        <div class="video-container">
+          <div class="video-wrapper">
+            <button class="video-top-button" id="screenshotBtn">
+              <div class="button-icon-wrapper">
+                <img src="SS-SHOT.png" alt="screenshot" class="ss invert">
+                <span class="new-badge">NEW</span>    
+              </div>
+            </button>
+          
+            <video id="videoElement" width="900" height="550" controls>
+              <source src="video.mp4" type="video/mp4">
+            </video>
+          </div>
+          
+<canvas id="frameCanvas" style="display: none;"></canvas>
+            <h3 class="fix">HTML Full Course (in Hindi)</h3>
+        
+            <div class="interaction-row">
+              <div class="twc">
+                <span class="new-badge">NEW</span>
+              <span class="talk-to-creator">Talk to Creator</span>
+            </div>
+                <div class="like-button">
+                  <img src="likeup.svg" alt="like" class="like-icon">
+                  <span class="like-count">25k</span>
+                </div>
+                <div class="dislike-button">
+                  <img src="dislike.svg" alt="dislike" class="dislike-icon invert">
+                  <span class="dislike-count">1k</span>
+                </div>
+              </div>
+        
+            <div class="likes">
+              <img id="img" class="small-profile-img" src="https://yt3.ggpht.com/ytc/AIdro_kX3sdbuu3KFmRPsmlu0R5Rx_BhpxwupjtvJmkEdNfla7w=s88-c-k-c0x00ffffff-no-rj" alt="profile" draggable="false">
+            <div class="c-name">
+                <h3>
+                    CodeWithHarry</h3>
+                    <span class="size1">7.39M subscribers</span>
+            </div>
+            <div class="join"> Join</div>
+            <div class="subscribe">
+                <img src="subbell.svg" alt="bell icon" class="bell-icon">
+                <span>Subscribe</span>
+              </div>
+              <div class="askai">
+                <div class="ai-icon-wrapper">
+                  <img src="chatgpt.png" alt="Ai" class="Ai invert">
+                  <span class="new-badge">NEW</span>
+                </div>
+                <span>Ask AI</span>
+              </div>
+              <a href="yourvideo.mp4" download class="download-btn">Download</a>
+              <div class="share">
+                <img src="share.svg" alt="bell icon" class="share-icon invert">
+                <span>Share</span>
+              </div>
+              <div class="dots">
+                <img src="dots.svg" alt="info" class="dots-icon invert">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-panel">
+          <div class="head">
+          <button class="all-btn">All</button>
+          <button class="Cwh-btn">From CodeWithHarry</button>
+          <button class="web-btn">Web Development</button>
+          <div class="greaterthen">
+            <img src="greaterthen.svg" alt="" class="gtn invert">
+          </div>
+        </div>
+        <div class="recommended-videos">
+          <div class="video-card">
+            <a href="https://www.youtube.com/watch?v=X8BYu3dMKf0" target="_blank">
+              <img src="https://i.ytimg.com/vi/X8BYu3dMKf0/hqdefault.jpg" alt="Video Thumbnail" class="video-thumbnail">
+            </a>
+            <div class="video-info">
+              <h4 class="video-title invert">Web Developer Roadmap (2025)-World Changing</h4>
+              <p class="yt-name invert">Code CodeWithHarry</p>
+              <p class="video-meta">1.2M views • 3 days ago</p>
+            </div>
+          </div>
+          <div class="video-card">
+            <a href="https://www.youtube.com/watch?v=BI8du4rC1Iw" target="_blank">
+              <img src="https://i.ytimg.com/vi/BI8du4rC1Iw/hqdefault.jpg" alt="Video Thumbnail" class="video-thumbnail">
+            </a>
+            <div class="video-info">
+              <h4 class="video-title invert">How I started coding from 0 and cracked Goggle</h4>
+              <p class="yt-name invert">Fraz</p>
+              <p class="video-meta">7.3K views • 3 weeks ago</p>
+            </div>
+          </div>
+          <div class="video-card">
+            <a href="https://www.youtube.com/watch?v=1FhSGOhBu1s" target="_blank">
+              <img src="https://i.ytimg.com/vi/1FhSGOhBu1s/hqdefault.jpg" alt="Video Thumbnail" class="video-thumbnail">
+            </a>
+            <div class="video-info">
+              <h4 class="video-title invert">Inside the Deadliest Hunt on Earth|Antartica's Whaling...</h4>
+              <p class="yt-name invert">Dhruv Rathee</p>
+              <p class="video-meta">1.2M views • 3 Months ago</p>
+            </div>
+          </div>
+          <div class="video-card">
+            <a href="https://www.youtube.com/watch?v=2kCTmlU0RPg" target="_blank">
+              <img src="https://i.ytimg.com/vi/2kCTmlU0RPg/hqdefault.jpg" alt="Video Thumbnail" class="video-thumbnail">
+            </a>
+            <div class="video-info">
+              <h4 class="video-title invert">Web Developer Roadmap (2025)-World Changing</h4>
+              <p class="yt-name invert">Apna College</p>
+              <p class="video-meta">123K views • 1 week ago</p>
+            </div>
+          </div>
+        </div>
+        </div>
+            </div>
+            </div>
+            <script src="index.js"></script>
+</body>
+</html>
